@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{1502A7D1-96C0-4559-8D65-DBD7AE0A44C4}"
+        Name="ServicePagePath"
+        DisplayName="Page Path"
+        Type="Text"
+        Group="GSK Columns" />
+    <Field ID="{C8F883B7-A3A0-43CB-9E5C-112A114B0A6B}"
+        Name="ServicePriority"
+        DisplayName="Priority"
+        Type="Integer"
+        Group="GSK Columns" />
+    <Field ID="{D4F33237-3C51-4896-BDDF-4587835CA341}"
+        Name="ServiceParent"
+        DisplayName="Parent"
+        Type="Lookup"
+        List="Lists/Services"
+        ShowField="Title"
+        Group="GSK Columns" />
+
+    <ContentType ID="0x0100EE8AF91B675349BBA4E653B48FE30DCF"
+        Name="Service"
+        Group="GSK Content Types"
+        Description="">
+        <FieldRefs>
+            <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+            <FieldRef ID="{1502A7D1-96C0-4559-8D65-DBD7AE0A44C4}" />
+            <FieldRef ID="{C8F883B7-A3A0-43CB-9E5C-112A114B0A6B}" />
+            <FieldRef ID="{D4F33237-3C51-4896-BDDF-4587835CA341}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+        CustomSchema="schemaServices.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Services"
+        Description="Services"
+        TemplateType="100"
+        Url="Lists/Services">
+    </ListInstance>
+
+</Elements>

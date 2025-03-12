@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{ED0765EE-AA03-48C8-B83D-5C2051EC35D2}"
+        Name="RoadmapDescription"
+        DisplayName="Description"
+        Type="Note"
+        RichText="TRUE"
+        RichTextMode="FullHtml"
+        IsolateStyles="TRUE"
+        Group="GSK Columns" />
+    <Field ID="{0E2722EA-95C4-48A2-99AC-3484E8C4E71F}"
+        Name="RoadmapOrder"
+        DisplayName="Roadmap Order"
+        Type="Integer"
+        Group="GSK Columns" />
+
+    <ContentType ID="0x0100063A1BF148F84209A6B0785AD3978528"
+        Name="Roadmap"
+        Group="GSK Content Types"
+        Description="">
+        <FieldRefs>
+            <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+            <FieldRef ID="{ED0765EE-AA03-48C8-B83D-5C2051EC35D2}" />
+            <FieldRef ID="{0E2722EA-95C4-48A2-99AC-3484E8C4E71F}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+        CustomSchema="schemaRoadmap.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Roadmaps"
+        Description="Roadmaps"
+        TemplateType="100"
+        Url="Lists/Roadmaps">
+    </ListInstance>
+
+</Elements>

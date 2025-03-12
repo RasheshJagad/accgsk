@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "marketing-navigation-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/marketingNavigation/MarketingNavigationApplicationCustomizer.js",
+          "manifest": "./src/extensions/marketingNavigation/MarketingNavigationApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "service-products-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/serviceProducts/ServiceProductsWebPart.js",
+          "manifest": "./src/webparts/serviceProducts/ServiceProductsWebPart.manifest.json"
+        }
+      ]
+    },
+    "roadmap-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/roadmap/RoadmapWebPart.js",
+          "manifest": "./src/webparts/roadmap/RoadmapWebPart.manifest.json"
+        }
+      ]
+    },
+    "service-landing-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/serviceLanding/ServiceLandingWebPart.js",
+          "manifest": "./src/webparts/serviceLanding/ServiceLandingWebPart.manifest.json"
+        }
+      ]
+    },
+    "service-links-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/serviceLinks/ServiceLinksWebPart.js",
+          "manifest": "./src/webparts/serviceLinks/ServiceLinksWebPart.manifest.json"
+        }
+      ]
+    },
+    "kpi-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/kpi/KpiWebPart.js",
+          "manifest": "./src/webparts/kpi/KpiWebPart.manifest.json"
+        }
+      ]
+    },
+    "our-team-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ourTeam/OurTeamWebPart.js",
+          "manifest": "./src/webparts/ourTeam/OurTeamWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    },
+    "bootstrap": {
+      "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "bootstrap"
+    }
+  },
+  "localizedResources": {
+    "MarketingNavigationApplicationCustomizerStrings": "lib/extensions/marketingNavigation/loc/{locale}.js",
+    "ServiceProductsWebPartStrings": "lib/webparts/serviceProducts/loc/{locale}.js",
+    "RoadmapWebPartStrings": "lib/webparts/roadmap/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "ServiceLandingWebPartStrings": "lib/webparts/serviceLanding/loc/{locale}.js",
+    "ServiceLinksWebPartStrings": "lib/webparts/serviceLinks/loc/{locale}.js",
+    "KpiWebPartStrings": "lib/webparts/kpi/loc/{locale}.js",
+    "OurTeamWebPartStrings": "lib/webparts/ourTeam/loc/{locale}.js"
+  }
+}

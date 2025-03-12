@@ -1,0 +1,49 @@
+<List xmlns:ows="Microsoft SharePoint" Title="Services" EnableContentTypes="TRUE"
+    FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Services" BaseType="0"
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+    <MetaData>
+        <ContentTypes>
+            <ContentType ID="0x0100EE8AF91B675349BBA4E653B48FE30DCF"
+                Name="Service"
+                Group="GSK Content Types"
+                Description="">
+                <FieldRefs>
+                    <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+                    <FieldRef ID="{1502A7D1-96C0-4559-8D65-DBD7AE0A44C4}" />
+                    <FieldRef ID="{C8F883B7-A3A0-43CB-9E5C-112A114B0A6B}" />
+                    <FieldRef ID="{D4F33237-3C51-4896-BDDF-4587835CA341}" />
+                </FieldRefs>
+            </ContentType>
+        </ContentTypes>
+        <Fields></Fields>
+        <Views>
+            <View BaseViewID="1" Type="HTML" WebPartZoneID="Main"
+                DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE"
+                MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx"
+                ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+                <XslLink Default="TRUE">main.xsl</XslLink>
+                <JSLink>clienttemplates.js</JSLink>
+                <RowLimit Paged="TRUE">30</RowLimit>
+                <Toolbar Type="Standard" />
+                <ViewFields>
+                    <FieldRef Name="LinkTitle"></FieldRef>
+                    <FieldRef Name="ServicePagePath"></FieldRef>
+                    <FieldRef Name="ServicePriority"></FieldRef>
+                     <FieldRef Name="ServiceParent"></FieldRef>
+                </ViewFields>
+                <Query>
+                    <OrderBy>
+                        <FieldRef Name="ID" />
+                    </OrderBy>
+                </Query>
+            </View>
+        </Views>
+        <Forms>
+            <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx"
+                WebPartZoneID="Main" />
+            <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx"
+                WebPartZoneID="Main" />
+            <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+        </Forms>
+    </MetaData>
+</List>

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "marketing-portal-client-side-solution",
+    "id": "3ad1ce98-6689-4b02-bc3f-7c5d3a0de0ee",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Flow Service",
+        "scope": "access_as_user"
+      }
+    ],
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "marketing-portal description"
+      },
+      "longDescription": {
+        "default": "marketing-portal description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "61e016c4-fb0d-45ff-876f-aa8a6bd1ace1",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml",
+            "elementsConfigurations.xml",
+            "elementsProducts.xml",
+            "elementsRoadmap.xml",
+            "elementsServices.xml",
+            "elementsTeams.xml",
+            "elementsAnnouncements.xml",
+            "elementsKPI.xml"
+          ],
+          "elementFiles": [
+            "schemaConfigurations.xml",
+            "schemaProducts.xml",
+            "schemaRoadmap.xml",
+            "schemaServices.xml",
+            "schemaTeams.xml",
+            "schemaAnnouncements.xml",
+            "schemaKPI.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/marketing-portal.sppkg"
+  }
+}

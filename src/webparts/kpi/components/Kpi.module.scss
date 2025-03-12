@@ -1,0 +1,114 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.kpi {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.carouselItemHolder {
+  padding: 15px;
+}
+
+.slickArrow2 {
+  width: 30px;
+  height: 25px;
+  color: transparent;
+  font-size: 1px;
+  list-style: 1px;
+  height: 25px;
+  width: 25px;
+  border: none;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  filter: grayscale(1);
+  opacity: 0.3;
+}
+.slickArrow2.slickNext2 {
+  background: url('../assets/backBtn.png') no-repeat 50% 50%;
+  right: -35px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.slickArrow2.slickPrev2 {
+  background: url('../assets/backBtn.png') no-repeat 50% 50%;
+  left: -35px;
+}
+
+.carouselItem {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.center {
+  padding: 0 8vw;
+  //background-color: #FFFF;
+}
+
+.carouselItem>strong {
+  padding: 0 30px;
+  width: 200px;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.carouselItem ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border-left: 1px solid #EAE8E4;
+  padding: 10px 15px 0;
+}
+
+.carouselItem ul li {
+  text-align: center;
+  font-size: 13px;
+  padding: 0 10px 10px;
+}
+
+.carouselItem ul li strong {
+  display: block;
+  color: #EE4E09;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}

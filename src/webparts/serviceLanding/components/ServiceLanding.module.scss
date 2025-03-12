@@ -1,0 +1,196 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.serviceLanding {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.tab.active {
+  background-color: orange;
+  color: white;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;  // Adjust gap between the tabs
+  margin-bottom: 20px; // Space between tabs and tab content
+}
+
+.tab {
+  flex: 1 1 30%;  // Adjust this to make the tabs more flexible and responsive
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: center;
+}
+
+.active {
+  background-color: #0078d4;
+  color: white;
+}
+
+
+.childServices {
+  margin-left: 20px; // Indent child services for visual hierarchy
+  padding-top: 10px;
+  border-left: 2px solid #ccc; // Optional: a subtle border to distinguish child services
+}
+
+.serviceTab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.expandIcon {
+  margin-left: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.landingPage{ min-height: calc(100vh - 150px);
+  //  background: url('../../../assets/images/contentBg.png') no-repeat 0 60vh; 
+  //  background-size: 100%;
+  }
+.landingCenter{ margin: 0 auto; padding-left: 9px;}
+.pageHead{ color: #EE4E09; font-size: 36px; font-style: normal; font-weight: 600; line-height: 36px;}
+.pageDescr{color: #151515; font-size: 16px; font-style: normal; font-weight: 400; line-height: 22px;}
+
+
+.ourServices{ border-radius: 8px; background-image:url('../assets/servicesBg.png'), linear-gradient(232deg, #FFB600 5.75%, #EE4E09 66.67%); background-position: 0 -0px; background-repeat: no-repeat; background-size: 100%;  margin-top:20px; padding: 10px 15px; color: #FFF; margin-bottom: 15px;}
+.ourServices h3{ font-size: 20px; line-height: 22px; margin-bottom: 10px; color: #FFF;}
+.serviceSearch{ margin-bottom: 30px;}
+.serviceSearchResult{ display: flex; flex-wrap: wrap;}
+.serviceSearchResult a{border-radius: 4px; border: 2px solid #FFF; background: rgba(243, 102, 51, 0.00); padding:0 10px; display:inline-block; margin:0 10px 10px 0; color: #FFF;text-transform: uppercase; font-size: 12px; line-height: 30px; height: 34px; font-weight: 600;}
+
+.serviceSearchResult span{border-radius: 4px; border: 2px solid #FFF; background: rgba(243, 102, 51, 0.00); padding:0 10px; display:inline-block; margin:0 10px 10px 0; color: #FFF;text-transform: uppercase; font-size: 12px; line-height: 30px; height: 34px; font-weight: 600; cursor: pointer;}
+
+.more{border-radius: 4px; border: 2px solid #FFF; background: rgba(243, 102, 51, 0.00); padding:0 10px; display:inline-block; margin:0 10px 0px 0; color: #FFF; font-size: 12px; line-height: 30px; height: 34px; font-weight: 600; cursor: pointer;}
+.OurServiceSearch {width: 250px; max-width: 100%;
+float: right; }
+.OurServiceSearch>div>div {
+  border-radius: 3px !important;
+}
+
+.OurServiceSearch>div>div:hover {
+  border: 1px solid rgb(163, 162, 160) !important;
+}
+.whatWeDo h3, .ourteam h3, .whyweDo h3{ font-size: 20px;  font-weight:600; line-height: 36px; color: #EE4E09;}
+.whatWeDo img{ width: 70vw; display: block; margin: 30px auto 0;}
+.whyweDo img{ width: 70vw; display: block; margin: 30px auto 0;}
+
+.teamList{ display: flex; justify-content: center; flex-wrap: wrap; margin-top: 30px;}
+.teamMember{ text-align: center; margin: 0 20px 20px;}
+.teamMember{ text-align: center; }
+.teamMember figure{ display:inline-block; width: 155px; height: 155px; overflow: hidden; border-radius: 50%; margin: auto;  margin-bottom: 20px;  filter: drop-shadow(2px 2px 4px rgba(70, 70, 70, 0.25));}
+.teamMember strong{ display: block; font-size: 16px; font-weight: 600; margin-bottom: 3px;}
+.teamMember span{ display: inline-block; width: 155px;font-size: 12px; vertical-align: top;}
+
+
+.roadMapMenuList, .roadMapMenuList >div{ display: flex; flex-wrap: wrap; list-style-type: none; padding: 0; margin: 0; width:100%}
+.roadMapMenuList li{ transition: all 0.3s ease; flex-grow: 1;}
+.roadMapMenuList li div{border-radius: 4px; border: 2px solid #FFF; background: rgba(243, 102, 51, 0.00); padding:0 10px;  text-align: center;   margin:0 10px 10px 0; color: #FFF;text-transform: uppercase; font-size: 12px; line-height: 30px; height: 34px; font-weight: 600; cursor: pointer;  transition: all 0.3s ease;}
+.roadMapMenuList li div span{ color: #FFF;   transition: all 0.3s ease;}
+.roadMapMenuList li div i{color: #FFF; font-size: 20px; font-weight: 700; line-height: 24px; margin-left: 8px;}
+.subMenuTrigger{ color: #FFF;}
+.activeparent {width:100%}
+.roadMapMenuList li div:hover{background: rgba(255, 255, 255, 0.9); color: #EE4E09;}
+.roadMapMenuList li div:hover span{ color: #EE4E09;}
+.roadMapMenuList li div:hover i{color: #EE4E09;}
+
+.roadMapMenuList li.openSubLinks{padding:0; margin-bottom: 10px; width: 100%; }
+.openSubLinks { display: block !important; }
+.roadMapMenuList li.activeparent>div{ background-color: #FFF !important; color: #EE4E09; position: relative;}  
+.roadMapMenuList li.activeparent>div:after{content:''; width: 0; height: 0; border:12px solid transparent; border-bottom:12px solid #FFF; border-top:3px solid transparent; position: absolute; left: 0; right: 0; top: 100%; margin: 0 auto;}
+
+.roadMapMenuList li.activeparent>div span{ color: #EE4E09;}
+.roadMapMenuList li.activeparent>div i{color: #EE4E09;}
+
+.roadMapMenuList li ul{ display:none; list-style-type: none; padding:15px 15px 0px; margin:1px 0 5px; border: 2px solid #FFF; border-radius:8px; background-color: rgb(255, 255, 255, 0.15); width: 100%; box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.08);}
+
+.roadMapMenuList li ul li{display:inline-block; color: #FFF; padding:3px 10px 5px; margin: 0 10px 15px 0; border-radius: 4px; border: 1.5px solid #FFF; transition: all 0.3s ease;}
+
+.roadMapMenuList li ul li a{ text-decoration: none; color: #FFF; font-size: 13px; font-weight: 600; }
+.roadMapMenuList li ul li:hover{ background: #FFF; color: #EE4E09; }
+.roadMapMenuList li ul li:hover a{ color: #EE4E09; }
+
+
+.roadMapMenuListV2 {position: relative;}
+.roadMapMenuListV2, .roadMapMenuListV2>div{ display: flex; flex-wrap: wrap; list-style-type: none; padding: 0; margin: 0;}
+.roadMapMenuListV2 li{ transition: all 0.3s ease; cursor: pointer;}
+.roadMapMenuListV2 li div{border-radius: 4px; border: 2px solid #FFF; background: rgba(243, 102, 51, 0.00); padding:0 10px; display:inline-block; margin:0 5px 0px 0; color: #FFF;text-transform: uppercase; font-size: 12px; line-height: 30px; height: 34px; font-weight: 600; cursor: pointer;  transition: all 0.3s ease; margin-bottom:5px;z-index: 9999;}
+.roadMapMenuListV2 li div span{ color: #FFF;   transition: all 0.3s ease;}
+.roadMapMenuListV2 li div i{color: #FFF; font-size: 20px; font-weight: 700; line-height: 24px; margin-left: 8px; display: inline-block; width: 11px; text-align: center;}
+.subMenuTrigger{ color: #FFF;}
+.roadMapMenuListV2 li div:hover{background: rgba(255, 255, 255, 0.9); color: #EE4E09;}
+.roadMapMenuListV2 li div:hover span{ color: #EE4E09;}
+.roadMapMenuListV2 li div:hover i{color: #EE4E09;}
+
+
+
+
+ 
+.roadMapMenuListV2 li:hover{padding:0; margin-bottom:0px; }
+.roadMapMenuListV2 li:hover div{ background-color: #FEF4F0; color: #EE4E09; position: relative;}  
+.roadMapMenuListV2 li.hasSublink:hover div:after{content:''; width:40px; height:29px; background: url('../assets/dropmenuArrow2.png') no-repeat 50% 0; background-size: contain; position: absolute; left: 0; right: 0; top:40px; margin: 0 auto;}
+ 
+.roadMapMenuListV2 li:hover div span{ color: #EE4E09;}
+.roadMapMenuListV2 li:hover div i{color: #EE4E09;}
+.roadMapMenuListV2 li:hover ul{ display: block; left:-15px;right: -15px;}
+.roadMapMenuListV2 li:hover ul:empty{ display: none;}
+
+.roadMapMenuListV2 li ul{  display:none; width: 100%; list-style-type: none; padding:15px 15px 0px; margin:21px 0 5px; border-radius:8px; background-color: #F36633; width: auto; box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.08); position: absolute; left: 0;  z-index: 999; }
+.roadMapMenuListV2 li ul:before{content:'';  height: 50px; width: 100%; position: absolute; left: 0; bottom: 100%;}
+ 
+.roadMapMenuListV2 li ul li{display:inline-block; color: #FFF; padding:3px 10px 5px; margin: 0 10px 15px 0; border-radius: 4px; border: 1.5px solid #FFF; transition: all 0.3s ease;}
+ 
+.roadMapMenuListV2 li ul li a{ text-decoration: none; color: #FFF; font-size: 13px; font-weight: 600; }
+.roadMapMenuListV2 li ul li:hover{ background: #FEF4F0; color: #EE4E09; padding:3px 10px 5px; margin: 0 10px 15px 0; cursor: pointer; }
+.roadMapMenuListV2 li ul li:hover a{ color: #EE4E09; }
+
+.roadMapMenuListV2 li .more {width: 100%; text-align:center;}

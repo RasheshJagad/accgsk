@@ -1,0 +1,47 @@
+<List xmlns:ows="Microsoft SharePoint" Title="Team Details" EnableContentTypes="TRUE"
+    FolderCreation="FALSE" Direction="$Resources:Direction;" Url="TeamDetails" BaseType="1"
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+    <MetaData>
+        <ContentTypes>
+            <ContentType ID="0x010100DB7B35E095244CBAB322D9C6FF407CB6"
+                Name="Team Member"
+                Group="GSK Content Types"
+                Description="">
+                <FieldRefs>
+                    <FieldRef ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" />
+                    <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+                    <FieldRef ID="{B09D76DD-D978-48CC-8EBA-E469DCA687F1}" />
+                </FieldRefs>
+            </ContentType>
+        </ContentTypes>
+        <Fields></Fields>
+        <Views>
+            <View BaseViewID="1" Type="HTML" WebPartZoneID="Main"
+                DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE"
+                MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx"
+                ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+                <XslLink Default="TRUE">main.xsl</XslLink>
+                <JSLink>clienttemplates.js</JSLink>
+                <RowLimit Paged="TRUE">30</RowLimit>
+                <Toolbar Type="Standard" />
+                <ViewFields>
+                    <FieldRef Name="FileLeafRef"></FieldRef>
+                    <FieldRef Name="LinkTitle"></FieldRef>
+                    <FieldRef Name="MemberDesignation"></FieldRef>
+                </ViewFields>
+                <Query>
+                    <OrderBy>
+                        <FieldRef Name="ID" />
+                    </OrderBy>
+                </Query>
+            </View>
+        </Views>
+        <Forms>
+            <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx"
+                WebPartZoneID="Main" />
+            <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx"
+                WebPartZoneID="Main" />
+            <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+        </Forms>
+    </MetaData>
+</List>

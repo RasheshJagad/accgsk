@@ -1,0 +1,42 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.serviceLinks {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+.ourServices{ border-radius: 8px; background-image:url('../assets/servicesBg.png'), linear-gradient(232deg, #FFB600 5.75%, #EE4E09 66.67%); background-position: 0 -0px; background-repeat: no-repeat; background-size: 100%;  margin-top:20px; padding: 10px 30px; color: #FFF; margin-bottom: 15px;}
+.ourServices h3{ font-size: 20px; line-height: 22px; margin-bottom: 10px; color: #FFF;}
+.serviceSearchResult{ display: flex; flex-wrap: wrap;}
+.serviceSearchResult a{border-radius: 4px; border: 2px solid #FFF; background: rgba(243, 102, 51, 0.00); padding:0 10px; display:inline-block; margin:0 10px 10px 0; color: #FFF;text-transform: uppercase; font-size: 12px; line-height: 30px; height: 34px; font-weight: 600;}
+
+.serviceSearchResult span{border-radius: 4px; border: 2px solid #FFF; background: rgba(243, 102, 51, 0.00); padding:0 10px; display:inline-block; margin:0 10px 10px 0; color: #FFF;text-transform: uppercase; font-size: 12px; line-height: 30px; height: 34px; font-weight: 600; cursor: pointer;  transition: all 0.3s ease}
+.serviceSearchResult span:hover{background: rgba(255, 255, 255, 0.9); color: #EE4E09 !important;}
+.serviceSearchResult span:hover a{color: #EE4E09 !important;}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{B69A1F80-C30E-4273-A818-71BD7CAB0988}"
+        Name="ProductDescription"
+        DisplayName="Description"
+        Type="Note"
+        RichText="FALSE"
+        Group="GSK Columns" />
+    <Field ID="{CB10E014-551E-4E65-88F0-388F34F6EB5B}"
+        Name="ProductBusinessUnit"
+        DisplayName="Business Unit"
+        Type="Choice"
+        Group="GSK Columns">
+        <CHOICES>
+            <CHOICE>Architecture &amp; DevOps Services</CHOICE>
+            <CHOICE>Data Governance &amp; Quality</CHOICE>
+            <CHOICE>Manufacturing</CHOICE>
+            <CHOICE>MSAT &amp; Quality</CHOICE>
+            <CHOICE>Supply Chain &amp; Network Services</CHOICE>
+            <CHOICE>Quality</CHOICE>
+            <CHOICE>Supply Chain</CHOICE>
+            <CHOICE>Advanced Analytics</CHOICE>
+        </CHOICES>
+    </Field>
+    <Field ID="{C9E4A404-1CBF-4BDF-9B89-F9F9A717C16E}"
+        Name="ProductBusinessValue"
+        DisplayName="Business Value"
+        Type="Text"
+        Group="GSK Columns" />
+    <Field ID="{6C07DC53-8BF9-4469-B555-82F9927D2A07}"
+        Name="ProductTeamPO"
+        DisplayName="Product Team Contact Details PO"
+        Type="User"
+        Group="GSK Columns" />
+    <Field ID="{888A9248-9D7A-4F8A-9EB0-BDD781C62758}"
+        Name="ProductTeamDev"
+        DisplayName="Product Team Contact Details Dev"
+        Type="UserMulti"
+        Group="GSK Columns" />
+    <Field ID="{F6B906F1-83DF-40C2-8741-9FEDA1251B4B}"
+        Name="ProductTechnologyStack"
+        DisplayName="Technology Stack"
+        Type="Note"
+        RichText="FALSE"
+        Group="GSK Columns" />
+    <Field ID="{CC28DEE1-47FF-4FA2-B90F-F0EC29D20916}"
+        Name="ProductGoLiveDate"
+        DisplayName="Go-Live Date"
+        Type="DateTime"
+        Format="DateOnly"
+        Group="GSK Columns" />
+    <Field ID="{387AC734-0176-415B-B6F1-1FFEC33DBE74}"
+        Name="ProductSupportStartDate"
+        DisplayName="Production Support Start Date"
+        Type="DateTime"
+        Format="DateOnly"
+        Group="GSK Columns" />
+    <Field ID="{0DDC420A-FF3A-4AD7-BE4E-4466A3F16C80}"
+        Name="ProductServiceNowCI"
+        DisplayName="Service Now CI"
+        Type="Text"
+        Group="GSK Columns" />
+    <Field ID="{81E43DCC-C27E-4A7E-B2E3-A40DBF1AADDC}"
+        Name="ProductCIID"
+        DisplayName="Application Service CI ID"
+        Type="URL"
+        Group="GSK Columns" />
+    <Field ID="{5BEBC5E8-BF4B-4436-B3FA-2755FBE565A1}"
+        Name="ProductHealthCheckDashboard"
+        DisplayName="Health Check Dashboard"
+        Type="URL"
+        Group="GSK Columns" />
+    <Field ID="{1FDB44FF-B9FA-4416-B520-985D20DE3C6D}"
+        Name="ProductValidationStatus"
+        DisplayName="Validation Status"
+        Type="Choice"
+        Group="GSK Columns">
+        <CHOICES>
+            <CHOICE>GxP</CHOICE>
+            <CHOICE>Non GxP</CHOICE>
+            <CHOICE>NA</CHOICE>
+        </CHOICES>
+    </Field>
+    <Field ID="{B25A9D3E-9DC8-4BB6-B272-61E4CFBE8DE5}"
+        Name="ProductVQD"
+        DisplayName="VQD/Archer Reference"
+        Type="Text"
+        Group="GSK Columns" />
+    <Field ID="{E7DBA1BC-C615-45AA-9245-63BBEB69271E}"
+        Name="ProductLocation"
+        DisplayName="Location"
+        Type="URL"
+        Group="GSK Columns" />
+    <Field ID="{C24399B5-A410-4650-8F17-47AB9451E3B4}"
+        Name="ProductCriticality"
+        DisplayName="Criticality"
+        Type="Choice"
+        Group="GSK Columns">
+        <CHOICES>
+            <CHOICE>1-highly critical</CHOICE>
+            <CHOICE>2-moderate critical</CHOICE>
+            <CHOICE>3-less critical</CHOICE>
+        </CHOICES>
+    </Field>
+    <Field ID="{E3134043-75A4-4E90-8BE0-B55CDBB0BA72}"
+        Name="ProductBusinessImpact"
+        DisplayName="Business Impact if Application is down"
+        Type="Note"
+        RichText="FALSE"
+        Group="GSK Columns" />
+    <Field ID="{E186CDEB-1B70-4511-AE39-A06341732518}"
+        Name="ProductParent"
+        DisplayName="Parent"
+        Type="Lookup"
+        List="Lists/Products"
+        ShowField="Title"
+        Group="GSK Columns" />
+
+    <ContentType ID="0x0100B5637EA6C46B4FCBB4CACABD88E6C6EF"
+        Name="Product"
+        Group="GSK Content Types"
+        Description="">
+        <FieldRefs>
+            <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+            <FieldRef ID="{B69A1F80-C30E-4273-A818-71BD7CAB0988}" />
+            <FieldRef ID="{CB10E014-551E-4E65-88F0-388F34F6EB5B}" />
+            <FieldRef ID="{C9E4A404-1CBF-4BDF-9B89-F9F9A717C16E}" />
+            <FieldRef ID="{6C07DC53-8BF9-4469-B555-82F9927D2A07}" />
+            <FieldRef ID="{888A9248-9D7A-4F8A-9EB0-BDD781C62758}" />
+            <FieldRef ID="{F6B906F1-83DF-40C2-8741-9FEDA1251B4B}" />
+            <FieldRef ID="{CC28DEE1-47FF-4FA2-B90F-F0EC29D20916}" />
+            <FieldRef ID="{387AC734-0176-415B-B6F1-1FFEC33DBE74}" />
+            <FieldRef ID="{0DDC420A-FF3A-4AD7-BE4E-4466A3F16C80}" />
+            <FieldRef ID="{81E43DCC-C27E-4A7E-B2E3-A40DBF1AADDC}" />
+            <FieldRef ID="{5BEBC5E8-BF4B-4436-B3FA-2755FBE565A1}" />
+            <FieldRef ID="{1FDB44FF-B9FA-4416-B520-985D20DE3C6D}" />
+            <FieldRef ID="{B25A9D3E-9DC8-4BB6-B272-61E4CFBE8DE5}" />
+            <FieldRef ID="{E7DBA1BC-C615-45AA-9245-63BBEB69271E}" />
+            <FieldRef ID="{C24399B5-A410-4650-8F17-47AB9451E3B4}" />
+            <FieldRef ID="{E3134043-75A4-4E90-8BE0-B55CDBB0BA72}" />
+            <FieldRef ID="{E186CDEB-1B70-4511-AE39-A06341732518}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+        CustomSchema="schemaProducts.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Products"
+        Description="Products"
+        TemplateType="100"
+        Url="Lists/Products">
+    </ListInstance>
+
+</Elements>

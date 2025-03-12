@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{B09D76DD-D978-48CC-8EBA-E469DCA687F1}"
+        Name="MemberDesignation"
+        DisplayName="Designation"
+        Type="Text"
+        Group="GSK Columns" />
+
+    <ContentType ID="0x010100DB7B35E095244CBAB322D9C6FF407CB6"
+        Name="Team Member"
+        Group="GSK Content Types"
+        Description="">
+        <FieldRefs>
+            <FieldRef ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" />
+            <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+            <FieldRef ID="{B09D76DD-D978-48CC-8EBA-E469DCA687F1}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+        CustomSchema="schemaTeams.xml"
+        FeatureId="00bfea71-e717-4e80-aa17-d0c71b360101"
+        Title="Team Details"
+        Description="Team Details"
+        TemplateType="101"
+        Url="TeamDetails">
+    </ListInstance>
+
+</Elements>

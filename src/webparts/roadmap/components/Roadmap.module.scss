@@ -1,0 +1,299 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.roadmap {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+// .landingPage {
+//   background: url('../../../assets/images/contentBg.png') no-repeat 0 60vh;
+//   background-size: 100%;
+// }
+
+.landingCenter {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.pageHead {
+  color: #EE4E09;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.pageDescr {
+  color: #151515;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.backToLanding {
+  margin: 6vh 0 5vh;
+  padding-left: 50px;
+  position: relative;
+}
+
+.backToLanding:before {
+  content: '';
+  width: 35px;
+  height: 35px;
+  background: url('../assets/backBtn.png') no-repeat 50% 50%;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+.backToLanding strong {
+  display: block;
+  color: #EE4E09;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.roadMapSec {
+  margin: 0 50px;
+}
+
+.roadMapSec h3 {
+  color: #EE4E09;
+  font-size: 20px;
+  ;
+}
+
+.roadMapList {
+  list-style-type: none;
+  padding: 0;
+  margin: 40px 0 0;
+  gap: 20;
+  position: relative;
+}
+
+.roadMapList:after {
+  content: '';
+  height: 8px;
+  width: 100%;
+  background-color: #969696;
+  position: absolute;
+  left: 0;
+  top: 35%;
+}
+
+.roadMapList>li.roadMapListItem {
+  z-index: 1 !important;
+}
+
+.roadMapItem {
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 2px 2px 3px 0px rgba(102, 102, 102, 0.25);
+  padding: 10px 10px 15px;
+  border: 1px solid rgba(229, 229, 229, 1);
+  height: 100%;
+}
+
+.roadMapItem>div:first-child {
+  display: flex;
+  align-items: center;
+  margin: -20px 0 10px;
+}
+
+.roapmapContent img {
+  max-width: 100%;
+}
+
+.roadMapItem>div i {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url('../assets/icon2.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 4px;
+  font-size: 0;
+  color: transparent;
+  background-size: 45px;
+}
+
+.roadMapItem>div .edit {
+  width: 25px;
+  height: 25px;
+  background: url('../assets/editIcon.png') no-repeat 50% 50%;
+  font-size: 0;
+  color: transparent;
+  cursor: pointer;
+  margin: auto;
+  margin-right: 10px;
+}
+
+.roadMapItem>div strong{ display: flex; width: 70px; height: 70px; border-radius: 4px; font-size: 20px; color: #FFF; justify-content: center; align-items: center; font-weight: 600;}
+ 
+.color1 strong{background-color: #EE4E09;}
+ 
+.color2 strong{background-color: #CA305B;}
+ 
+.color3 strong{background-color: #244EA2;}
+ 
+.color4 strong{background-color: #21837E;}
+
+.modalmain {
+  min-height: 60%;
+  min-width: 50%;
+  overflow-y: auto;
+}
+
+.modalContainer {
+  max-width: 600px;
+  width: 80vw;
+  padding: 20px;
+}
+
+.modalHead {
+  color: #EE4E09;
+  font-size: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #CCC;
+}
+
+.modalClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  background-image: url('../assets/close.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.richTextContainer {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #CCC;
+  position: relative;
+}
+
+.richTextContainer>div[class="ql-active"]>div:first-child {
+  top: -33px !important;
+  display: inline-block;
+}
+
+.richTextContainer>div[class="ql-active"]>div:last-child {
+  margin-top: 33px;
+}
+
+.submitBtn {
+  border: none;
+  background-color: #EE4E09;
+  padding: 7px 15px;
+  border-radius: 4px;
+  color: #FFF;
+  margin: 0 auto;
+}
+
+.submitBtn:focus,
+.modalClose:focus {
+  outline: none;
+}
+
+.submitBtn:hover {
+  background-color: #d94506;
+}
+
+.richTextContainer .ql-active .ql-toolbar {
+  position: static !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .roadMapList:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 613px) {
+  .richTextContainer>div[class="ql-active"]>div:first-child {
+    top: -73px !important;
+    display: inline-block;
+  }
+
+  .richTextContainer>div[class="ql-active"]>div:last-child {
+    margin-top: 73px;
+  }
+}
+
+
+
+.gskPortalRoadmapWp {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}

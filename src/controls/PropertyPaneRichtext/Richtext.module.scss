@@ -1,0 +1,26 @@
+.richTextContainer {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+}
+
+.richTextContainer>div[class="ql-active"]>div:first-child {
+    top: -33px !important;
+    display: inline-block;
+}
+
+.richTextContainer>div[class="ql-active"]>div:last-child {
+    margin-top: 33px;
+}
+
+@media screen and (max-width: 613px) {
+    .richTextContainer>div[class="ql-active"]>div:first-child {
+        top: -73px !important;
+        display: inline-block;
+    }
+
+    .richTextContainer>div[class="ql-active"]>div:last-child {
+        margin-top: 73px;
+    }
+}
